@@ -91,7 +91,7 @@ class LinkedList:
         return -1
 
     # Return the value of index p in the list
-    def _return(self, p: int) -> int:
+    def _return(self, p: int) -> LLNode:
         # Invalid index to retrieve from list
         if p <= 0 or p > self.cnt:
             return
@@ -100,7 +100,7 @@ class LinkedList:
         for _ in range(p - 1):
             tmp = tmp.nxt
 
-        return tmp.val
+        return tmp
 
     # Check if the list is empty
     def empty(self) -> bool:
