@@ -1,6 +1,7 @@
 class ALGraph:
 
     def __init__(self, n_lst) -> None:
+        # I used a dictionary here to make it easier to track the nodes compared to having indexes that will change when the list is updated
         self.adj = {n: [] for n in n_lst}
 
     # method to add an edge to the CONNECTED graph
@@ -33,3 +34,6 @@ class ALGraph:
                 lst.remove(n)
 
         self.adj.pop(n)
+
+
+""" Go to al_graph_tests to check the testing carried ou for this implementation"""
